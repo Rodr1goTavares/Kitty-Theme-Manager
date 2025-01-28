@@ -1,4 +1,4 @@
-# Kitty-Theme-Selector 🖌️
+# Kitty-Theme-Selector (🚧: In progress)
 
 <br>
 
@@ -34,5 +34,3 @@ You can also save themes to different locations using the ```shell ktm -s <custo
   # exemple
   ktm --select gruvbox
 ```
-  
-### 🚧: In progress [...]
