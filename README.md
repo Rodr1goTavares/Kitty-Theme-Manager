@@ -1,7 +1,8 @@
-# Kitty-Theme-Selector
+# Kitty-Theme-Selector 🖌️
 
+<br>
 
-### How it works ? 
+## How it works ? 
 
 The application will manage kitty's .conf files, using a
 a theme folder in ``` $HOME/.config/kitty/ktheme ```
@@ -13,7 +14,9 @@ Saved themes can be applied at any time using the ```ktm --select``` command.
 You can also save themes to different locations using the ```shell ktm -s <custom/path> ``` command.
 
 
-### Exemples:
+<br>
+
+## Exemples:
 
 #### Save actual config as a theme ✔️: 
   (default location: $HOME/.config/kitty/kthemes)
