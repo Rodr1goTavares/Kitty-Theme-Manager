@@ -15,14 +15,15 @@ You can also save themes to different locations using the ```shell ktm -s <custo
 
 ### Exemples:
 
-##### Save actual config as a theme (default location: $HOME/.config/kitty/kthemes)
+#### Save actual config as a theme ✔️: 
+  (default location: $HOME/.config/kitty/kthemes)
 ``` shell
   ktm -s my-new-theme
   ktm -s my-new-theme $HOME/path/to/custom/directory
 ```
 
 
-##### change theme:
+#### change theme 💱:
 
 ``` shell
   ktm --change <.conf file name located in your $HOME/.config/kitty/kthemes>
@@ -31,4 +32,4 @@ You can also save themes to different locations using the ```shell ktm -s <custo
   ktm --select gruvbox
 ```
   
-In progress [...]
+### 🚧: In progress [...]
