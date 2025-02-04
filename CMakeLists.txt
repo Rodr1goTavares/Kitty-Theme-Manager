@@ -1,37 +1,31 @@
 
-cmake_minimum_required(VERSION 3.0) # Definir versão mínima do CMake
-project(ktm C) # Especifica que o projeto usa C
+cmake_minimum_required(VERSION 3.0)
+project(ktm C)
 
 ###############################################################################
-## Arquivos do projeto ########################################################
+## Project files ########################################################
 ###############################################################################
 
-# Buscar recursivamente os arquivos fonte e cabeçalhos em src/main/
 file(GLOB_RECURSE sources src/main/*.c src/main/*.h)
 
-# Se a variável 'sources' estiver vazia, forçamos pelo menos um arquivo principal
 if(NOT sources)
     message(FATAL_ERROR "Nenhum arquivo .c encontrado em src/main/")
 endif()
 
 ###############################################################################
-## Definição do Executável ####################################################
+## Definition of the Executable ####################################################
 ###############################################################################
 
-# Criar o executável sem incluir arquivos de recursos
 add_executable(ktm ${sources})
 
-# Definir opções de compilação para C
 target_compile_options(ktm PUBLIC -std=c11 -Wall -Wextra -Wpedantic)
 
-# Permitir includes relativos ao diretório src/main
 target_include_directories(ktm PUBLIC src/main)
 
 ###############################################################################
-## Testes (Opcional) ##########################################################
+## Tests ##########################################################
 ###############################################################################
 
-# Buscar biblioteca CUnit para testes (opcional)
 find_package(CUnit)
 
 if(CUNIT_FOUND)
@@ -48,7 +42,7 @@ if(CUNIT_FOUND)
 endif()
 
 ###############################################################################
-## Instalação e Empacotamento #################################################
+## Installation and Packaging #################################################
 ###############################################################################
 
 install(TARGETS ktm DESTINATION bin)
