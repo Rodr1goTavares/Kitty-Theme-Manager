@@ -1,7 +1,6 @@
-#ifndef _MODULE_H
-#define _MODULE_H
+#ifndef _UTILS_H
+#define _UTILS_H
 
-char* get_home_path();
-char* get_kitty_path(); 
+void get_kitty_path(char* kitty_path_buffer, int size);
 
 #endif

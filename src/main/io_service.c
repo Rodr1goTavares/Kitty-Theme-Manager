@@ -6,7 +6,7 @@
 
 int save_actual_preset(char *theme_name, char *destination_path);
 
-int processInput(int argc, char** argv) {
+int processInput(char** argv) {
   if (argv[1] == NULL) return 1;
   if (strncmp(argv[1], "--save", 6) == 0 || strncmp(argv[1], "-s", 2) == 0) {
     printf("Save option selected !\n");
