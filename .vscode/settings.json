@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "system_utils.h": "c"
+        "system_utils.h": "c",
+        "theme_manager.h": "c"
     }
 }

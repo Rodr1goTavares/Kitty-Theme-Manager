@@ -29,6 +29,7 @@ int save_actual_preset(char* theme_name, char* destination_path) {
 
     free(copyAndRenamePresetCommand);
 
+    printf("\n\n( Theme saved )\n\n");
     return result;
 }
 
@@ -56,5 +57,6 @@ int select_theme(char* theme_name, char* theme_folder_path) {
 
     free(selectionThemeCommand);
 
+    printf("\n\n( Theme changed to %s )\n\n", theme_name);
     return result;
 }
