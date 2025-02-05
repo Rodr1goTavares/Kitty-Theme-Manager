@@ -1,4 +1,4 @@
-# Kitty-Theme-Selector (🚧: In progress)
+# Kitty-Theme-Manager (🚧: In progress)
 
 <br>
 
