@@ -26,10 +26,10 @@ You can also save themes to different locations using the ```shell ktm -s <custo
 ```
 
 
-#### change theme 💱:
+#### Select theme 💱:
 
 ``` shell
-  ktm --change <.conf file name located in your $HOME/.config/kitty/kthemes>
+  ktm --select <.conf file name located in your $HOME/.config/kitty/kthemes>
 
   # exemple
   ktm --select gruvbox
