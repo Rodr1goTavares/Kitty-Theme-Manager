@@ -40,6 +40,11 @@ You can also save themes to different locations using the ```shell ktm -s <custo
 wget -qO- https://raw.githubusercontent.com/Rodr1goTavares/Kitty-Theme-Manager/main/scripts/install.sh | bash
 ```
 
+## Uninstall
+```shell
+wget -qO- https://raw.githubusercontent.com/Rodr1goTavares/Kitty-Theme-Manager/main/scripts/uninstall.sh | bash
+```
+
 
 
 
