@@ -34,3 +34,12 @@ You can also save themes to different locations using the ```shell ktm -s <custo
   # exemple
   ktm --select gruvbox
 ```
+
+## Instalation
+```shell
+  wget -qO- https://raw.githubusercontent.com/Rodr1goTavares/Kitty-Theme-Manager/blob/main/scripts/install.sh | sh
+```
+
+
+
+
