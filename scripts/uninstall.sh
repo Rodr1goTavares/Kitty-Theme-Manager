@@ -5,7 +5,7 @@ LOCAL_BIN="$HOME/.local/bin/ktm"
 GLOBAL_BIN="/usr/local/bin/ktm"
 
 if [ -f "$LOCAL_BIN" ]; then
-    echo "Removendo ktm from $LOCAL_BIN..."
+    echo "Removing ktm from $LOCAL_BIN..."
     rm -f "$LOCAL_BIN"
 fi
 
