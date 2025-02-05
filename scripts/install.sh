@@ -1,32 +1,39 @@
 
 #!/bin/sh
 
+# Detect the operating system and architecture
 OS=$(uname -s)
 ARCH=$(uname -m)
 
+# Set the file name based on the operating system
 case "$OS" in
-    Linux)   FILE="ktm-linux-amd64" ;;
-    Darwin)  FILE="ktm-macos-arm64" ;;
+    Linux)   FILE="ktm" ;;  # Correct file name without extension
+    Darwin)  FILE="ktm" ;;  # Correct file name without extension
     *) echo "System not supported!" && exit 1 ;;
 esac
 
+# GitHub repository and version configuration
 GITHUB_REPO="Rodr1goTavares/Kitty-Theme-Manager"
-VERSION="latest"  # Or specify version. ex: "v1.0.0"
-URL="https://github.com/$GITHUB_REPO/releases/$VERSION/download/$FILE"
+VERSION="latest"  # Or specify a version like "v1.0.0"
+URL="https://github.com/$GITHUB_REPO/releases/latest/download/$FILE"  # Corrected URL
 
+# Installation directory path
 BIN_DIR="$HOME/.local/bin"
 BIN_PATH="$BIN_DIR/ktm"
 
+# Create the directory if needed
 mkdir -p "$BIN_DIR"
 
-echo "Baixando $FILE de $URL..."
+# Download the binary file
+echo "Downloading $FILE from $URL..."
 wget -q --show-progress -O "$BIN_PATH" "$URL"
 
+# Make the binary executable
 chmod +x "$BIN_PATH"
 
-# Garantir que o diretório está no PATH
+# Check if the directory is in PATH
 if ! echo "$PATH" | grep -q "$BIN_DIR"; then
-    echo "Adicionando $BIN_DIR ao PATH..."
+    echo "Adding $BIN_DIR to PATH..."
     case "$SHELL" in
         */bash) echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.bashrc" ;;
         */zsh)  echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.zshrc" ;;
@@ -35,4 +42,6 @@ if ! echo "$PATH" | grep -q "$BIN_DIR"; then
     esac
 fi
 
-echo "Instation finished! Restart your shell to use."
+echo "Installation complete! Restart your terminal or run 'source ~/.bashrc' to use."
+
+
