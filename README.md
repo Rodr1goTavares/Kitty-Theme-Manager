@@ -37,7 +37,7 @@ You can also save themes to different locations using the ```shell ktm -s <custo
 
 ## Instalation
 ```shell
-  wget -qO- https://raw.githubusercontent.com/Rodr1goTavares/Kitty-Theme-Manager/scripts/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/Rodr1goTavares/Kitty-Theme-Manager/scripts/install.sh | sh
 ```
 
 
